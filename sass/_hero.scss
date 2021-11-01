@@ -1,0 +1,39 @@
+.hero {
+    display: flow-root;
+    min-height: 18.75rem;
+    background: url('../images/image-hero-mobile.jpg'), linear-gradient(to bottom, $overlay 20%, transparent);
+    background-size: cover;
+    background-position: center top;
+    background-blend-mode: overlay;
+
+    @media screen and (min-width: $tablet-size) {
+        background-image: url('../images/image-hero-desktop.jpg'), linear-gradient(to bottom,$overlay 20%, transparent);
+    }
+
+    .nav {
+        width: 85%;
+        margin: 2rem auto;
+        @include horizontal-align(space-between, center);
+
+        &__hamburger {
+            cursor: pointer;
+
+            @media screen and ( min-width: $tablet-size ) {
+                display: none;
+            }
+        }
+
+        &__ul {
+            display: none;
+            @media screen and (min-width: $tablet-size) {
+                width: 26%;
+                min-width: 17.9rem;
+                @include horizontal-align(space-between, center);
+            }
+        }
+
+        &__link {
+            color: #FFF;
+        }
+    }
+}

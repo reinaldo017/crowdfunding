@@ -1,0 +1,14 @@
+.main {
+    display: flow-root;
+    background-color: $light-gray;
+
+    .container {
+        width: 85%;
+        max-width: 50rem;
+        margin: 0 auto;
+        margin-top: -3.5rem;
+        @import 'mastercraft';
+        @import 'progress';
+        @import 'about';
+    }
+}

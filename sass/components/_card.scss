@@ -1,0 +1,46 @@
+.card {
+    margin: 1.625rem auto;
+    border: 0.8px solid #dbdbdb;
+    border-radius: 8px;
+
+    &__container {
+        width: 88%;
+        margin: 1.625rem auto;
+    }
+
+    &__header {
+        @media screen and (min-width: $tablet-size) {
+            @include horizontal-align(space-between, center);
+        }
+    }
+
+    &__title {
+        font-size: 0.9rem;
+    }
+
+    &__pledge {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $moderate-cyan;
+    }
+
+    &__bottom {
+        @media screen and (min-width: $tablet-size) {
+            @include horizontal-align(space-between, center);
+        }
+    }
+
+    &__stock {
+        font-size: 1.7rem;
+    }
+
+    span {
+        color: $dark-gray;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    &--disabled {
+        opacity: 0.5;
+    }
+}

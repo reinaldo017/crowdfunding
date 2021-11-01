@@ -1,0 +1,25 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-1;
+}
+
+p {
+    margin-bottom: 0;
+    color: $dark-gray;
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+//Variables
+$font-1: 'Commissioner', sans-serif;
+
+$desktop-size: 1400px;
+$tablet-size: 768px;
+$mobile-size: 370px;
+
+$moderate-cyan: hsl(176, 50%, 47%);
+$dark-cyan: hsl(176, 72%, 28%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 48%);
+$light-gray: #fafafa;
+$overlay: rgba(0, 0, 0, 0.4);
+
+//Placeholders
+%section {
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #FFF;
+}
+
+//Mixins
+@mixin vertical-align($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin horizontal-align($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

@@ -1,0 +1,15 @@
+.about {
+    display: flow-root;
+    @extend %section;
+
+    &__container {
+        width: 85%;
+        margin: 2.63rem auto;
+    }
+
+    &__title {
+        font-size: 1.125rem;
+    }
+
+    @import './components/card';
+}

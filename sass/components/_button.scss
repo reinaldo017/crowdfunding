@@ -1,0 +1,14 @@
+.button {
+    padding: 1.4em 3.7em;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: $moderate-cyan;
+    cursor: pointer;
+
+    &--disabled {
+        background-color: $dark-gray;
+        cursor: initial;
+    }
+}

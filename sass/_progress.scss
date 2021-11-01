@@ -1,0 +1,58 @@
+.progress {
+    display: flow-root;
+    @extend %section;
+    margin: 1.7rem auto; 
+
+    &__container {
+        width: 85%;
+        margin: 2.5rem auto;
+        @include vertical-align(center, space-between);
+    }
+
+    &__numbers {
+        @include vertical-align(space-between, center);
+
+        .stat {
+            margin: 1.56rem;
+            text-align: center;
+
+            &__heading {
+                margin: 0;
+                font-size: 1.75rem;
+                font-weight: 700;
+            }
+
+            &__subheading {
+                margin-top: 1rem;
+            }
+        }
+
+        hr {
+            width: 25%;
+            margin: 0 auto;
+            opacity: 0.4;
+
+            @media screen and (min-width: $tablet-size) {
+                width: 2px;
+                height: 80px;
+            }
+        }
+
+        @media screen and (min-width: $tablet-size) {
+            @include horizontal-align(space-evenly, center);
+        }
+    }
+
+    &__bar-container {
+        border-radius: 15px; 
+        background-color: #f4f4f4;
+
+    }
+
+    &__bar-content {
+        width: 80%;
+        height: 0.75rem;
+        border-radius: 15px;
+        background-color: $moderate-cyan;
+    }
+}
