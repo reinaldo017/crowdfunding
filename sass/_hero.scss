@@ -21,6 +21,10 @@
             @media screen and ( min-width: $tablet-size ) {
                 display: none;
             }
+
+            &--hide {
+                display: none;
+            }
         }
 
         &__ul {
